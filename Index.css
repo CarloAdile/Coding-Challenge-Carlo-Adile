@@ -1,0 +1,91 @@
+/* La nostra pagina web è caratterizzata da un immagine di sfondo e un bordo leggermente opaco che fa da contenitore a tutti gli elementi che ci interessano */
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.principale {
+    width: 63%;
+    margin: 0 auto;
+    background-color: rgba(00, 00, 00, 0.5);
+    border-radius: 18px;
+    margin-top: 25px;
+}
+
+/* Organizziamo la sezione che farà da intestazione ai contenuti veri e propri */
+.commerciale {
+    text-align: center;
+    color: #00dd00;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 0.3;
+}
+
+.logo {
+    margin-top: 90px;
+    width: 21%;
+    height: auto;
+}
+
+/* Funzioni per interagire con i monopattini */
+.azioni {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 8px;
+    background-color: #00dd00;
+}
+
+/* Lista dei monopattini disponibili */
+.disponibili{
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: inline-block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 0.5;
+}
+
+.disponibili span {
+    font-size: 20px;
+}
+
+.disponibili .go::before{
+    content: "\27A5"; 
+}
+
+.disponibili:last-child{
+    margin-bottom:75px;
+}
+
+/* Viene mostrato visivamente agli utenti il livello di carica dei monopattini */
+
+.charge {
+    width: 300px;
+    height: 2em;  
+}
+
+.medium {
+    width: 300px;
+    background-color: olivedrab;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.low {
+    width: 200px;
+    background-color: red;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.high {
+    width: 500px;
+    background-color: greenyellow; 
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
